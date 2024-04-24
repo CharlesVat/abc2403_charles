@@ -45,3 +45,44 @@ VARIABLE
 rayon est un NOMBRE ENTIER
 aire est un NOMBRE ENTIER
 volume est un NOMBRE ENTIER
+
+TRAITEMENT
+
+ECRIRE "saisissez le rayon"
+LIRE rayon
+aire:= 4*3,14*rayon²
+volume := (4*3,14*rayon³)/3
+ECRIRE aire, volume
+
+
+# Exercice 1.5
+
+VARIABLE
+rayon est un NOMBRE ENTIER
+angle est un NOMBRE ENTIER
+aire est un NOMBRE ENTIER
+
+TRAITEMENT
+ECRIRE "saisissez le rayon
+LIRE rayon
+ECRIRE "saisissez l'angle"
+LIRE angle
+aire:= (3,14*rayon²*angle)/360
+ECRIRE aire
+
+# Exercice 1.6
+VARIABLE
+A est un nombre entier
+B est un nombre entier
+C est un nombre entier
+
+TRAITEMENT
+ECRIRE"saisissez A"
+lire A
+ECRIRE "saisissez B"
+LIRE B
+ECRIRE A , B
+C:= A
+A:= B
+B:= C
+ECRIRE A, B
