@@ -90,3 +90,45 @@ A:=B
 B:=C
 
 ECRIRE A, B
+
+# exercice 2.1
+
+
+VARIABLE
+Nombres est NOMBRE ENTIER
+
+
+TRAITEMENT
+ECRIRE "saissisez un nombre"
+LIRE Nombres
+SI Nombres <0 alors
+ECRIRE Nombres " est positif"
+SINON
+ECRIRE Nombres, " est négatif"
+
+# exercice 2.2
+
+VARIABLE
+NombresA est un NOMBRE ENTIER
+NombresB est un NOMBRE ENTIER
+Resultat est un NOMBRE REEL
+TRAITEMENT
+
+ECRIRE "Saissisez un premier nombre"
+LIRE NombresA
+ECRIRE "Saissisez un second nombre"
+LIRE NombreB
+Resultat := NombreA + NombreB
+SI Resultat >=0 alors
+ECRIRE Resultat,"est positif"
+
+# exercice 2.3
+
+VARIABLE
+Age est un NOMBRE ENTIER
+CATEGORIE est un NOMBRE ENTIER
+
+TRAITEMENT
+ECRIRE "saississez votre âge:"
+ECRIRE
+
