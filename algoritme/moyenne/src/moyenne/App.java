@@ -1,7 +1,7 @@
 package moyenne;
-
+//import qui import le outils
 import java.util.Scanner;
-
+import java.lang.Math;
 public class App {
 
 	public static void main(String[] args) {
@@ -15,11 +15,13 @@ public class App {
 		System.out.println("inserez le rayon :");
 		
 		rayon= sc.nextLong();
-		aire = (long) (4 * 3.14 * (rayon * rayon));
-		volume =(long) (4 * 3.14 * (rayon * rayon * rayon));
+		aire = (long) (4.0* Math.PI * (Math.pow(rayon,  2)));
+		volume =(long) (4.0 * Math.PI * (Math.pow(rayon,  3)))/3;
 		
 		System.out.println("l'air est de "+ aire);
-		System.out.println("le voulume est de"+ volume);
+		System.out.println("le volume est de "+ volume);
+		
+		sc.close();
 	}
 
 }

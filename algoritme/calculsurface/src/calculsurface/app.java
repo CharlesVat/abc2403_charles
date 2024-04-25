@@ -1,6 +1,7 @@
 package calculsurface;
 
 import java.util.Scanner;
+import java.lang.Math;
 
 public class app {
 
@@ -21,9 +22,10 @@ public class app {
 		
 		angle = sc.nextLong();
 		
-		Secteur = (long)(3.14 * (rayon * rayon)* angle)/360;
+		Secteur = ( Math.PI * (Math.pow(rayon,  2)* angle))/360;
 		System.out.println("le total est " + Secteur);
 		
+		sc.close();
 		
 	}
 	

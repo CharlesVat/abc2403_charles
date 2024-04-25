@@ -28,6 +28,8 @@ public class App {
 		
 		System.out.println("une fois inversé ca fait: "+ ChiffreA +" et " + ChiffreB);
 		
+		sc.close();
+		
 	}
 
 }
