@@ -101,7 +101,7 @@ Nombres est NOMBRE ENTIER
 TRAITEMENT
 ECRIRE "saissisez un nombre"
 LIRE Nombres
-SI Nombres <0 alors
+SI Nombres >=0 alors
 ECRIRE Nombres " est positif"
 SINON
 ECRIRE Nombres, " est négatif"
