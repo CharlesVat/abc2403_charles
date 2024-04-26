@@ -126,9 +126,22 @@ ECRIRE Resultat,"est positif"
 
 VARIABLE
 Age est un NOMBRE ENTIER
-CATEGORIE est un NOMBRE ENTIER
+Categorie est une CHAINE DE CARACTERE
 
 TRAITEMENT
 ECRIRE "saississez votre âge:"
-ECRIRE
+LIRE Age
+SI AGE <5 alors Categorie = "debutant"
+OU SI ge<=7 alors  Categorie = "poussin"
+OU SI age <=9 alors Categorie = "BENJAMIN"
+ou SI Age <=11 alors Catgorie = "Pupille"
+ou SI Age <=13 alors Catgorie = "Minime"
+Ou si Age <=15 alors Categorie = "cadet"
+Ou si Age <=17 alors Categorie = "junior"
+Ou si Age <=19 alors categorie = "Sénior"
+Ou si Age <=35 alors catégorie = "Vétéran"
+sinon 
+Catogrie="trop jeune"
+
+ECIRE "vous êtes", Categorie
 

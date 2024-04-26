@@ -18,7 +18,10 @@ public class App {
 		Resultat= NombresA +NombresB;
 		if(Resultat >=0){
 			System.out.println(Resultat + " est positif");
-		} else
+		} else if(Resultat == 0){ 
+			System.out.println("t'est con");
+		}
+		else
 		{
 			System.out.println(Resultat + " est negatif");
 		}
