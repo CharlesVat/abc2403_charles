@@ -38,6 +38,7 @@ if(Age >=35) {
 
  System.out.println("vous êtes " + Categorie);
 	
+ sc.close();
 
 }
 

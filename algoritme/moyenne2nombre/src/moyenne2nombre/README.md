@@ -30,7 +30,7 @@ variable
  secondNombre est un NOMBRE ENTIER NON SIGNE
  resultat est un NOMBRE REEL
 
-
+`
  TRAITEMENT
 
 ECRIRE "Saisissez un premier nombre entier"
@@ -159,8 +159,16 @@ LIRE Heure
 ECRIRE "Entrez les minutes"
 Lire Minute
 
-Resultat = Minute+3
+Resultat := Minute+3
 
-Si resultat =60 ALORS resultat =0 Et Heure++1
+Si Heure <=24 OU Minute <=60 ALORS ECRIRE"les données saisies sont invalide"
+
+SINON
+Si resultat <=60 ALORS resultat = Resultat - 60 Et Heure++1 
 
 Si Heure =24 ALORS Heure=0
+
+
+RESULTAT
+
+Ecrire "dans 3minute il serra : " Heure"h"Resultat"
