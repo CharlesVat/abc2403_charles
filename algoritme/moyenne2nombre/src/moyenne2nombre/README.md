@@ -145,3 +145,22 @@ Catogrie="trop jeune"
 
 ECIRE "vous êtes", Categorie
 
+# exercice 2.4
+
+VARIABLE
+Heure est un nombre entier
+Minute est un nombre entier
+Resultat est un nombre entier
+
+TRAITEMENT
+
+ECRIRE "entrez l'heure"
+LIRE Heure
+ECRIRE "Entrez les minutes"
+Lire Minute
+
+Resultat = Minute+3
+
+Si resultat =60 ALORS resultat =0 Et Heure++1
+
+Si Heure =24 ALORS Heure=0
