@@ -172,3 +172,21 @@ Si Heure =24 ALORS Heure=0
 RESULTAT
 
 Ecrire "dans 3minute il serra : " Heure"h"Resultat"
+
+# exercice 2.5
+
+10 <=0.10 11 -20 0.09 21<= 0.08
+
+VARIABLE
+
+Copie est un NOMBRE ENTIER
+Facture est un NOMBRE ENTIER
+Prix est un NOmbre entier
+TRAITEMENT
+
+ECRIRE"Saisisez le nombre de PHotocopie"
+LIRE Copie
+SI Copie <= 10 ALORS prix = 0,10
+SINON SI Copie >10 ALOR prix= 0,09+(0,10*10)
+SINON SI copie >30 Alors prix = 0,08+(0,10*10) +(0,009*20)
+
