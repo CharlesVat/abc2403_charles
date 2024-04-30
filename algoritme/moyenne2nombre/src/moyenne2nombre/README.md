@@ -189,4 +189,33 @@ LIRE Copie
 SI Copie <= 10 ALORS prix = 0,10
 SINON SI Copie >10 ALOR prix= 0,09+(0,10*10)
 SINON SI copie >30 Alors prix = 0,08+(0,10*10) +(0,009*20)
+Facture = prix*Copie
+ecrire "vous devez", Facture
 
+# correctio de 2.5
+
+CONSTANTES
+
+P1 est un REEL <-- 0.10
+P2 est un REEL <-- 0.09
+P3 est un REEL <-- 0.08
+
+VARIABLES
+
+nombreDeCopies est un ENTIER
+MontantDeLaFacture est unn ENTIER
+
+TRAITEMENT
+
+ECRIRE "Saisissez le nombre de photocopies: "
+LIRE nombreDeCopies
+
+SI nombreDeCopies <= ALORS montantDeLaFacture <-- nombreDeCopies*P1
+SINON SI nombreDeCopies <=30 
+ALORS 
+MontantDeLaFacture <-- 10*P1 + 5nombreDeCopies -10) *P2
+SINON
+ MontantDeLaFacture <-- 10*P1 + 20 * P2(nombreDeCopies -30)*P3
+FIN SI
+
+ECRIRE"a payer: ", MontantDeLaFacture, "€"

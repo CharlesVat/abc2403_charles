@@ -2,8 +2,11 @@ import java.util.Scanner;
 
 
 public class App {
+final static double P1 =0.1;//équivalent de const en C# constane quoi
+final static double P2=0.09;	
+final static double P3=0.08;
 
-	public static void main(String[] args) {
+public static void main(String[] args) {
 		
 		Scanner sc;
 		sc = new Scanner(System.in);
