@@ -219,3 +219,32 @@ SINON
 FIN SI
 
 ECRIRE"a payer: ", MontantDeLaFacture, "€"
+
+
+# exercice 2.6
+
+VARIABLE
+
+CandidatA est un ENTIER
+CandidatB est un ENTIER
+CandidatC est un ENTIER
+CandidatD est un ENTIER
+Resultat est un ENTIER
+
+TRAITEMENt
+
+ECRIRE "Saisissez le résultat pour CandidatA"
+LIRE CandidaA
+
+ECRIRE "Saisissez le résultat pour CandidatB"
+LIRE CandidaB
+
+ECRIRE "Saisissez le résultat pour CandidatC"
+LIRE CandidaC
+
+ECRIRE "Saisissez le résultat pour CandidatD"
+LIRE CandidaD
+
+SI CandidaA ou CandidaB ou CanididaC ou CandidaD >=12,5 ALORS
+
+Resultat:= 
