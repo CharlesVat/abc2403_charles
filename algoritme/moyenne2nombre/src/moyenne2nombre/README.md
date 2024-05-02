@@ -229,22 +229,61 @@ CandidatA est un ENTIER
 CandidatB est un ENTIER
 CandidatC est un ENTIER
 CandidatD est un ENTIER
-Resultat est un ENTIER
+Resultat est une CHAINE DE CARACTERES
 
 TRAITEMENt
 
 ECRIRE "Saisissez le résultat pour CandidatA"
-LIRE CandidaA
+LIRE CandidatA
 
 ECRIRE "Saisissez le résultat pour CandidatB"
-LIRE CandidaB
+LIRE CandidatB
 
 ECRIRE "Saisissez le résultat pour CandidatC"
-LIRE CandidaC
+LIRE CandidatC
 
 ECRIRE "Saisissez le résultat pour CandidatD"
-LIRE CandidaD
+LIRE CandidatD
 
-SI CandidaA ou CandidaB ou CanididaC ou CandidaD >=12,5 ALORS
 
-Resultat:= 
+
+SI  50> cadidatA ALORS
+Resultat = élu 
+SINON SI 12,5>=CandidatA ET CandidatA>candidatB ET candidatA>candidatC ET candidatA>candidatD ALORS
+REsultat = favorable
+SINON SI 12,5>=candidatA
+Resultat =défavorable
+SINON
+Resultat= éliminé
+
+ECRIRE"LE candidat A est ", Resultat, "avec", CandidatA, pourcent"
+
+# excercice 2.7
+ROUGE=accident avec moin de 2ans et 25>=, 25< aucun accident et moin de 2 ans et 2accident pour 25>= et 2ans
+ORANGE= 2ans et 25<, 25>= avec moin 2ans sans aucun accident,25>= 2ans plus avec un accident
+VERT= 25>= 2ans plus avec aucun accident
+BLEU= VERT +5 ANS D'ANCIENNETE
+AUCUN=le reste
+
+
+25< permis moin de 2ans = rouge si aucun accident sinon aucun
+25< plus de 2ans ou 25=> mais moin 2ans=orange rouge en cas d'accident sinon aucun
+25>= 2an=> =vert aucun accident, 1=orange, rouge=2 et aucun plus
+
+
+VARIABLE
+Age est un chiffre entier
+Permis est un chiffre entier
+Ancien est un chiffre entier
+Forfait est une chaine de caractére
+
+TRAITEMENT
+
+ECRIRE"Saisissez votre âge:"
+LIRE Age
+ECRIRE"Saisissez combien d'année vous êtes tiutilaire du permis"
+LIRE Permis
+ECRIRE"Saisissez vos année d'ancienneté"
+LIRE Ancien
+
+
