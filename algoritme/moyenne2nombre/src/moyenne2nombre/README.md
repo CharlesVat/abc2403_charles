@@ -248,21 +248,21 @@ LIRE CandidatD
 
 
 SI  50> cadidatA ALORS
-Resultat = élu 
+	Resultat = élu 
 SINON SI 12,5>=CandidatA ET CandidatA>candidatB ET candidatA>candidatC ET candidatA>candidatD ALORS
-REsultat = favorable
+	REsultat = favorable
 SINON SI 12,5>=candidatA
-Resultat =défavorable
+	Resultat =défavorable
 SINON
-Resultat= éliminé
+	Resultat= éliminé
 
 ECRIRE"LE candidat A est ", Resultat, "avec", CandidatA, pourcent"
 
 # excercice 2.7
-ROUGE=accident avec moin de 2ans et 25>=, 25< aucun accident et moin de 2 ans et 2accident pour 25>= et 2ans
-ORANGE= 2ans et 25<, 25>= avec moin 2ans sans aucun accident,25>= 2ans plus avec un accident
-VERT= 25>= 2ans plus avec aucun accident
-BLEU= VERT +5 ANS D'ANCIENNETE
+ROUGE=accident avec moin de 2ans et 25>=, 25< aucun accident et moin de 2 ans et 2accident pour 25>= et 2ans+
+ORANGE= 2ans et 25<, 25>= avec moin 2ans sans aucun accident,25>= 2ans plus avec un accident et rouge +5ans
+VERT= 25>= 2ans plus avec aucun accident orange+5ans
+BLEU= VERT +5 ANS D'ANCIENNETE 
 AUCUN=le reste
 
 
@@ -276,7 +276,7 @@ Age est un chiffre entier
 Permis est un chiffre entier
 Ancien est un chiffre entier
 Forfait est une chaine de caractére
-
+Accident est un chiffre entier
 TRAITEMENT
 
 ECRIRE"Saisissez votre âge:"
@@ -285,5 +285,30 @@ ECRIRE"Saisissez combien d'année vous êtes tiutilaire du permis"
 LIRE Permis
 ECRIRE"Saisissez vos année d'ancienneté"
 LIRE Ancien
+ECRIRE"nombre d'accident"
+LIRE Accident
 
+SI Age>=25  ET Permis>=2 ET accident =0 
+alors 
+Forfait = VERT 
+sinon forfait = ORANGE
 
+si Age<25 ET Permis>=2 ET accident 0a
+alors
+Forfait = ORANGE
+sinon
+Forfait= ROUGE
+
+Si Age<25 ET Permis<2 ET Accident=0 ou Age<=25 ET Permis>=2 ET Accident=2 ALORS
+Forfait= ROUGE
+SINON 
+Forfait = "NON ELIGIBLE"
+
+SI Ancien>=5 Et forfait = VERT alors
+Forfait = BLEU
+SINON SI ancien>=5 ET Forfait = ORANGE alors
+FORFAIT= VERT 
+SINON SI ancien>=5 ET Forfait = ROUGE ALORS
+Forfait = ORANGE
+
+ECRIRE"vous assurée le forfait :", Forfait

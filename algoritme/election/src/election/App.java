@@ -26,13 +26,18 @@ public class App {
 		CandidatD= sc.nextDouble();
 		
 		if(50<CandidatA) {
+			
 			Resultat="élu";
+		
 		}else if(12.5<=CandidatA && CandidatA>CandidatB && CandidatA>CandidatC && CandidatA>CandidatD) {
 			Resultat="favroable";
+			
 		}else if(12.5<=CandidatA) {
 			Resultat="défavorable";
+	
 		}else {
 			Resultat="perdant";
+		
 		}
 		System.out.println("Le CandidatA est "+ Resultat+" avec "+ CandidatA);
 	}
