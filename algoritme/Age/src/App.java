@@ -17,22 +17,31 @@ public class App {
 		
 if(Age >=35) {
 	Categorie="Vétéran";}
+
 	else if(Age >=19) {
 		Categorie="sénior";
-	}	 else if(Age >=17) {
+	}	 
+	else if(Age >=17) {
 		Categorie="Junior";}
+
 	else if(Age >=15) {
 		Categorie="Cadet";
-	}  else if(Age >=13) {
-		Categorie="Poussin";	
-	} else if(Age >=11) {
-		Categorie="Pupille";
-	} else if(Age >=9) {
-		Categorie="Benjamin";
-	}	 else if(Age >=7) {
-		Categorie="Poussin";
-	} else if(Age >=5) {	Categorie="Débutant";
 	}
+	else if(Age >=13) {
+		Categorie="Poussin";	
+	}
+	else if(Age >=11) {
+		Categorie="Pupille";
+	} 
+	else if(Age >=9) {
+		Categorie="Benjamin";
+	}
+	else if(Age >=7) {
+		Categorie="Poussin";
+	}
+	else if(Age >=5) {	Categorie="Débutant";
+	}
+
 	else {
 		Categorie="trop jeune";}
 

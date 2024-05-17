@@ -131,15 +131,15 @@ Categorie est une CHAINE DE CARACTERE
 TRAITEMENT
 ECRIRE "saississez votre âge:"
 LIRE Age
-SI AGE <5 alors Categorie = "debutant"
-OU SI ge<=7 alors  Categorie = "poussin"
-OU SI age <=9 alors Categorie = "BENJAMIN"
-ou SI Age <=11 alors Catgorie = "Pupille"
-ou SI Age <=13 alors Catgorie = "Minime"
-Ou si Age <=15 alors Categorie = "cadet"
-Ou si Age <=17 alors Categorie = "junior"
-Ou si Age <=19 alors categorie = "Sénior"
-Ou si Age <=35 alors catégorie = "Vétéran"
+SI Age >=35 alors catégorie = "Vétéran" 
+SINON si Age >=19 alors categorie = "Sénior"
+SINON SI Age >=17 alors Categorie = "junior"
+SINON SI Age >=15 alors Categorie = "cadet"
+SINON SI Age >=13 alors Catgorie = "Minime"
+SINON SI Age >=11 alors Catgorie = "Pupille"
+SINON  SI age >=9 alors Categorie = "BENJAMIN"
+SINON  SI Age >=7 alors  Categorie = "poussin"
+SINON SI AGE >=5 alors Categorie = "debutant"
 sinon 
 Catogrie="trop jeune"
 
@@ -312,3 +312,153 @@ SINON SI ancien>=5 ET Forfait = ROUGE ALORS
 Forfait = ORANGE
 
 ECRIRE"vous assurée le forfait :", Forfait
+
+
+#Exercice 2.8
+
+
+VARIABLE
+
+Annee est un nombre entier
+Mois est un nombre entier
+Jours est un nombre entier
+Date estune chaine de caractére
+
+TRAITEMENT
+
+ECRIRE "sasisissez l'année"
+LIRE Annee
+ECRIRE"Sasissez le mois en nombre"
+LIRE Mois
+ECRIRE"sasissez le jour"
+LIRE Jours
+
+SI Annee%4!=0 ET Mois=02 ET Jours>=29 OU Mois==04 OU Mois==06 OU Mois==09 OU Mois==11 ET Jours>30 ALORS
+DATE ="Date non valide"
+SINON
+DATE="Date valide!"
+
+ECRIRE "c'est une ", Date
+
+
+#Exercice 3.1
+
+
+VARIABLE
+Nombre est nombre entier
+
+TRAITEMENT
+FAIRE
+ ECRIRE"Saisissez un chiffre entre 1 et 3
+ LIRE Nombre
+ TANT QUE Nombre>3 OU Nombre<1  SINON
+ FIN FAIRE
+ 
+ ECRIRE"Bravo, vous avez réussi"
+
+#Exercice 3.2
+
+VARIABLE
+Nombre est un entier
+
+TRAITEMENT
+FAIRE
+ECRIRE"Saisissez un nombre entre 10 et 20"
+	LIRE Nombre
+	 SI NOMBRE>20 ALORS ECRIRE"plus petit"
+	 SINON SI Nombre<10 ALORS ENCRIRE "plus grand!"
+	TANT QUE Nombres<10 ou Nombres>20
+	FIN FAIRE
+	ECRIRE"yes, you did it!"
+
+#Exercice 3.3
+
+VARIABLE
+Nombres est un entier
+Nombresup est un entier
+TRAITEMENT
+ECRIRE"Saisissez un nombre"
+LIRE nombre
+Nombresup:=nombres+10
+ECRIRE "les 10 prochain chiffre de",Nombres,"sont:"
+TANT QUE Nombres!=Nombresup ALORS
+Nombres++
+ECRIRE Nombre
+FIN TANT
+
+POUR  de Nombre à Nombresup, Nombre++
+ECRIRE Nombre
+FIN POUR
+
+
+#Exercice 3.4
+
+VARIABLE 
+
+Nombres est un entier
+Somme est un entier
+
+
+TRAITEMENT
+
+ECRIRE"saisissez un nombre"
+LIRE Nombres
+pour i:=1, de i à Nombres, i++ 
+Somme= Somme+i
+FIN POUR
+
+ECRIRE" la somme des jusqu'a , Nombres, est Somme
+
+#Exercice 3.5
+
+VARIABLE
+Nombres est un entier
+Factorielle est un entier
+
+TRAITEMENT
+ECRIRE"sasisr un nombre"
+LIRE Nombree
+POUR i:=1, de i à Nombres, i++
+Factorielle*=i
+FIN pour
+
+ECRIRE"le factoriel de", Nombres, "est", Factorielle
+
+#Exercice 3.6
+VARIABLE
+Nombre est un entier
+NombreM est un entier
+Top est un entier
+
+TRAITEMENT
+NombreM=0
+
+POur i:=0, de i à Nombre, i++
+ECRIRE"mettez le chiffre" i
+LIRE Nombre
+SI Nombre>NombreM ALORS NombreM=Nombre, Top=i 
+	FIN SI
+FIN POUR
+
+ECRIRE "le plus grand nombre est: ", NombreM
+ECRIRE NombreM, " étant le nombre numéro: " Top
+
+#Exercoce 3.7
+VARIABLE
+Nombre est un entier
+NombreM est une entier
+Top est un entier
+
+NombreM=0
+Top=0
+
+FAIRE
+ECRIRE"SASIRI NOMBRE" ,i++
+LIRE Nombre
+SI Nombre>NombreM ALORS NombreM=Nombre, Top=Nombre 
+	FIN SI
+TANT QUE NOMBRE!=0
+FIN FAIRE
+
+ECRIRE "le plus grand nombre est: ", NombreM
+ECRIRE NombreM, " étant le nombre numéro: " Top
