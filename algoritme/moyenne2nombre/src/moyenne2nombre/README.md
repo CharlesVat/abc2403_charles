@@ -462,3 +462,7 @@ FIN FAIRE
 
 ECRIRE "le plus grand nombre est: ", NombreM
 ECRIRE NombreM, " étant le nombre numéro: " Top
+
+
+#Exercice 3.7
+
