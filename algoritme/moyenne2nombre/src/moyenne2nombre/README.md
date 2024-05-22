@@ -443,7 +443,7 @@ FIN POUR
 ECRIRE "le plus grand nombre est: ", NombreM
 ECRIRE NombreM, " étant le nombre numéro: " Top
 
-#Exercoce 3.7
+#Exercice 3.7
 VARIABLE
 Nombre est un entier
 NombreM est une entier
@@ -464,5 +464,54 @@ ECRIRE "le plus grand nombre est: ", NombreM
 ECRIRE NombreM, " étant le nombre numéro: " Top
 
 
-#Exercice 3.7
+#Exercice 3.8
 
+VARIABLE
+Uneuro est un ENTIER
+Prix est un DECIMAL
+Monaie est un DECIMAL
+Billet est un ENTIER
+Piece est un DECIMAL
+
+
+TRAITEMENT
+
+FAIRE
+ECRIRE"Sasiri un prix:"
+LIRE prix
+Monaie= Prix+prix
+
+
+
+#Exercice 3.9
+
+VARIABLE
+Ordre est un DECIMAL
+Desordre est un DECIMAL
+Chevaux est un ENTIER
+ChevauxJoue est un ENTIER
+Calcul est DECIMAL
+Celcul est DECIMAL
+
+TRAITEMENT
+Calcul =1
+Celcul =1
+ECRIRE"Saisir le nombre de Cheveaux"
+LIRE Cheveaux
+ECRIRE"Sasir le nombre cheveaux jouez"
+LIRE CheveauxJoue
+
+POUR i=0,de i a Chevaux,i++
+calcul*=i
+FIN POUR
+
+POUR j=0, de j à Cheveaujoue,i++
+Celcul=celcul*i
+
+
+DESORDRE=
+
+
+
+
+TRAITEMENT

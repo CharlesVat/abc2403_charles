@@ -16,7 +16,7 @@ public class App {
 
 
 			
-					);
+					
 		}
 		System.out.println("la somme  des nombres jusqu'a "+Nombres+ " est :"+ Somme);
 	}

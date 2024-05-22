@@ -11,8 +11,8 @@ public class App {
 		System.out.println("ecrire un nombre");
 		Nombres= sc.nextInt();
 		
-		for (int i = 1; i <= Nombres; ++i) {
-			Factorielle*=i;
+		 for (int i = 1; i <= Nombres; ++i) {
+			       Factorielle*=i;
 			
 
 

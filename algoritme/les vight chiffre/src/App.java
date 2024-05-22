@@ -7,7 +7,7 @@ public class App {
 		int Nombre;
 		int Top=0;
 		int NombreM;
-		
+		String oui;
 		NombreM=0;
 		for (int i=1;i<=20;i++) {
 			
@@ -22,7 +22,7 @@ public class App {
 		System.out.println("le plus grand nombre est: "+ NombreM);
 		System.out.println(NombreM+ " étant le nombre numéro: " + Top);
 		
-
+sc.close();
 	}
 
 }
