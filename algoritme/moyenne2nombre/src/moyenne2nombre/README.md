@@ -494,8 +494,8 @@ Calcul est DECIMAL
 Celcul est DECIMAL
 
 TRAITEMENT
-Calcul =1
-Celcul =1
+Calcul =0
+Celcul =0
 ECRIRE"Saisir le nombre de Cheveaux"
 LIRE Cheveaux
 ECRIRE"Sasir le nombre cheveaux jouez"
@@ -515,3 +515,19 @@ DESORDRE=
 
 
 TRAITEMENT
+
+
+#exercice 4.1
+
+
+
+#Exercice 4.2
+
+
+
+#Exercice 4.3
+
+
+#Exercice 4.4
+
+#exrecice 4.5
