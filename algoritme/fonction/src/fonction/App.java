@@ -31,5 +31,6 @@ public static int caclulerSomme(int a,int b) {
 	
 	int resultat= a+b;
 	return resultat;
+
 }
 }

@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Arrays;
+
 public class App {
 
 	public static void main(String[] args) {
@@ -7,7 +7,7 @@ public class App {
 		sc= new Scanner(System.in);
 		int tailles;
 		int[] Tableau;
-		
+
 		System.out.println("Sasissez le nombre de numéro que vous allez saisir");
 		tailles=sc.nextInt();
 		Tableau=new int[tailles];
@@ -16,11 +16,11 @@ public class App {
 		System.out.println("Saisisez un nombe pour le tableau, ");
 		
 		Tableau[i]= sc.nextInt();
-		
-		Tableau[i]++;
-
 	}
-System.out.println(Arrays.toString(Tableau));
-}
+		
+		for(int i=0; i<tailles; i++) {
+			
+		}
+	}
 	
 }
