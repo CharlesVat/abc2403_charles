@@ -4,7 +4,7 @@ public class bureau {
 
 	private boolean brancher;
 
-	private float hauteurMaxEnCM;
+	
 
 	private float hauteurMinEnCM;
 
@@ -17,9 +17,9 @@ public class bureau {
 	private float hauteurEnCM;
 
 	public bureau() {
+		super();
 		brancher = true;
 		hauteurEnCM = 85;
-		hauteurMaxEnCM = 100;
 		hauteurMinEnCM = 50;
 		hauteur1EnCM = 80;
 		hauteur2EnCM = 90;
@@ -76,17 +76,62 @@ public class bureau {
 
 		return retour;
 	}
-	
+
 	public boolean Monter(float Hauteur) {
 		boolean retour;
-		if( hauteurEnCM+Hauteur < hauteurMaxEnCM  && brancher == true) {
-			retour=true;
+		if (hauteurEnCM + Hauteur < hauteurMaxEnCM && brancher == true) {
+			retour = true;
 			hauteurEnCM += Hauteur;
-			
-		} else retour =false;
+
+		} else
+			retour = false;
 		return retour;
 	}
 
+	public boolean PositonnetALaHauteur(float hauteur) {
+		boolean retour;
+		if (hauteur < hauteurMaxEnCM && hauteur > hauteurMinEnCM && brancher == true) {
+			hauteurEnCM = hauteur;
+			retour = true;
+		} else {
+			retour = false;
+		}
+		return retour;
+
+	}
+
+	public boolean MettreALaHateur1() {
+		boolean retour;
+		if (brancher == true) {
+			retour = true;
+			hauteurEnCM = hauteur1EnCM;
+		} else {
+			retour = false;
+		}
+		return retour;
+	}
+
+	public boolean MettreALaHateur2() {
+		boolean retour;
+		if (brancher == true) {
+			retour = true;
+			hauteurEnCM = hauteur2EnCM;
+		} else {
+			retour = false;
+		}
+		return retour;
+	}
+
+	public boolean MettreALaHateur3() {
+		boolean retour;
+		if (brancher == true) {
+			retour = true;
+			hauteurEnCM = hauteur3EnCM;
+		} else {
+			retour = false;
+		}
+		return retour;
+	}
 //public BureauElectrique();{
 //	
 //}
